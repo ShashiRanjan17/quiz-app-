@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz with Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div class="quiz-box">
+
+  <div class="question" id="question">Question Text</div>
+  <ul id="options"></ul>
+  <div class="info">
+    <div class="timer-circle" id="countdown">15</div>
+    <span id="score">Score: 0</span>
+  </div>
+  <button id="nextBtn" style="display:none;">Next</button>
+</div>
+
+    <div class="result" id="resultBox">
+      <h2>Quiz Completed!</h2>
+      <p>Your final score is: <span id="finalScore"></span></p>
+      <div id="nameBox">
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="saveScore()">Save Score</button>
+  </div>
+   <div id="leaderboardBox">
+    <h3>🏆 Leaderboard (Top 5)</h3>
+    <ol id="leaderboard"></ol>
+  </div>
+      <button onclick="location.reload()">Play Again</button>
+      <div id="reviewBox"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
